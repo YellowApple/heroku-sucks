@@ -1,0 +1,2 @@
+gem 'rubygems'
+gem 'sinatra'
