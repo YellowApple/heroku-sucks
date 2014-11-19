@@ -45,3 +45,5 @@ Depends on your perspective.  This isn't exactly a serious app, so taking it ser
 Because Heroku sucks.
 
 More seriously, because I wanted some way to familiarize myself with Heroku, and what better way than assuming that Heroku is crap and letting it prove itself to be something at least slightly better than crap?
+
+(Hint: so far, Heroku's not really doing a particularly good job of proving itself to be something at least slightly better than crap.)
