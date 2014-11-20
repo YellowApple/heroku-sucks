@@ -2,6 +2,10 @@ require 'rubygems'
 require 'sinatra/base'
 
 class HerokuSucksApp < Sinatra::Application
+  get '/realzies' do
+    send_file 'realzies.png'
+  end
+  
   get '/:name' do
     "#{params['name']} sucks."
   end
