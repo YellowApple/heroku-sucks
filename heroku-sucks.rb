@@ -1,14 +1,16 @@
 require 'rubygems'
-require 'sinatra'
+require 'sinatra/base'
 
-get '/:name' do
-  "#{params['name']} sucks."
-end
+class HerokuSucksApp < Sinatra::Application
+  get '/:name' do
+    "#{params['name']} sucks."
+  end
+  
+  get '/' do
+    "Heroku sucks."
+  end
 
-get '/' do
-  "Heroku sucks."
-end
-
-not_found do
-  "Not found, dummy."
+  not_found do
+    "Not found, dummy."
+  end
 end

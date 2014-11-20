@@ -1,2 +1,2 @@
 require './heroku-sucks'
-run Sinatra::Application
+run HerokuSucksApp
