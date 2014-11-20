@@ -15,6 +15,6 @@ class HerokuSucksApp < Sinatra::Application
   end
 
   not_found do
-    "Not found, dummy."
+    send_file '404.gif', :status => 404
   end
 end
