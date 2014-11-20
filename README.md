@@ -2,7 +2,8 @@
 
 ## Usage
 
-	git clone https://whatever-the-heck-the-clone-url-is
+	git clone https://github.com/YellowApple/heroku-sucks.git
+	cd heroku-sucks
 	bundle
 	
 	# run it locally:
