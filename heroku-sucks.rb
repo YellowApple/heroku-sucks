@@ -9,17 +9,11 @@ class HerokuSucksApp < Sinatra::Application
   end
   
   get '/:name' do
-    haml <<END
-%html
-  %head
-    %title #{params[:name]} sucks.
-  %body
-    %h1 #{params[:name]} sucks.
-END
+    haml :index, :locals => { :name => params[:name] }
   end
   
   get '/' do
-    "Heroku sucks."
+    haml :index, :locals => { :name => "Heroku" }
   end
 
   not_found do
