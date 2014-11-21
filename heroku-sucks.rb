@@ -6,10 +6,10 @@ class HerokuSucksApp < Sinatra::Application
   set :haml, :format => :html5
   
   cool_things = [
-    'yellowapple',
-    'YellowApple',
-    'cider',
-    'Cider',
+    '/yellowapple',
+    '/YellowApple',
+    '/cider',
+    '/Cider',
   ]
     
   get '/realzies' do
