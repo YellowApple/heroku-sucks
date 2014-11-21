@@ -6,10 +6,10 @@ class HerokuSucksApp < Sinatra::Application
   set :haml, :format => :html5
   
   cool_things = [
-    '/yellowapple',
-    '/YellowApple',
-    '/cider',
-    '/Cider',
+    'yellowapple',
+    'YellowApple',
+    'cider',
+    'Cider',
   ]
     
   get '/realzies' do
@@ -17,7 +17,7 @@ class HerokuSucksApp < Sinatra::Application
   end
   
   cool_things.each do |cool_thing|
-    get cool_thing do
+    get '/' + cool_thing do
       haml :xedni, :locals => { :name => cool_thing }
     end
   end
