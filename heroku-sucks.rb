@@ -4,13 +4,22 @@ require 'haml'
 
 class HerokuSucksApp < Sinatra::Application
   set :haml, :format => :html5
+  
+  cool_things = [
+    'yellowapple',
+    'YellowApple',
+    'cider',
+    'Cider',
+  ]
     
   get '/realzies' do
     send_file 'realzies.png'
   end
   
-  get '/yellowapple' do
-    haml :fuckyou
+  cool_things.each do |cool_thing|
+    get cool_thing do
+      haml :xedni, :locals => { :name => params[:name] }
+    end
   end
   
   get '/:name' do
