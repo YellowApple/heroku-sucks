@@ -9,6 +9,10 @@ class HerokuSucksApp < Sinatra::Application
     send_file 'realzies.png'
   end
   
+  get '/yellowapple' do
+    haml :fuckyou
+  end
+  
   get '/:name' do
     haml :index, :locals => { :name => params[:name] }
   end
