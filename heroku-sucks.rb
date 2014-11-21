@@ -4,7 +4,7 @@ require 'haml'
 
 class HerokuSucksApp < Sinatra::Application
   set :haml, :format => :html5
-  
+    
   get '/realzies' do
     send_file 'realzies.png'
   end
