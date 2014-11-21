@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra/base'
+require 'haml'
 
 class HerokuSucksApp < Sinatra::Application
   set :haml, :format => :html5
