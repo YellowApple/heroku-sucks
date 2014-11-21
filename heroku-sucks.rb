@@ -18,7 +18,7 @@ class HerokuSucksApp < Sinatra::Application
   
   cool_things.each do |cool_thing|
     get cool_thing do
-      haml :xedni, :locals => { :name => params[:name] }
+      haml :xedni, :locals => { :name => cool_thing }
     end
   end
   
