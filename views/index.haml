@@ -2,7 +2,7 @@
   %head
     %title #{name} sucks.
   %body
-    %svg{:xmlns => "http://www.w3.org/2000/svg"}
-      %text{:x => "10", :y => "40", :style => "stroke: #653f8f; fill: #ffffff; font-size: 2em;"}
+    %svg{:xmlns => "http://www.w3.org/2000/svg", :style => 'width: "100%"; height: "100%"'}
+      %text{:x => "100", :y => "100", :style => "stroke: #653f8f; fill: #ffffff; font-size: 2em;"}
         #{name} sucks.
         %animateTransform{:attributeName => "transform", :begin => "0s", :dur => "60s", :type => "rotate", :from => "0 60 60", :to => "360 60 60", :repeatCount => "indefinite"}
