@@ -7,7 +7,7 @@
 	bundle
 	
 	# run it locally:
-	rackit
+	rackup
 	
 	# deploy it to Heroku, which sucks:
 	heroku login # if you ain't already logged in
